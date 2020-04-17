@@ -11,8 +11,26 @@ public class Message {
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     private String text;
     private String tag;
+
+    private User author;
+
+    public User getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(User author) {
+        this.author = author;
+    }
 
     public Message() {
     }
